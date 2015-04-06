@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>织梦</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content="Image Highlighting and Preview with jQuery" />
+        <meta name="keywords" content="jquery, images, highlight, preview, lighbox, overlay, center, enlarge"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+				width:960px;
+                font-family:Georgia,Times,serif;
+                background:#f0f0f0;
+            }
+            #content{
+	background-color: #f6f6f6;
+	width: 864px;
+	color: #fff;
+	border-left: 10px solid #0968A0;
+	border-right: 1px solid #444;
+	-moz-box-shadow: 0px 0px 10px #000;
+	-webkit-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 80px;
+	padding-left: 40px;
+            }
+            .head, .meta a{
+                font-family:Helvetica,Arial,Verdana;
+                text-transform:uppercase;
+                font-weight:bold;
+                font-size:12px;
+                letter-spacing:3px;
+                color:#ccc;
+                padding-bottom:10px;
+                margin-bottom:10px;
+				text-shadow:1px 1px 1px #fff;
+				text-decoration: none;
+            }
+			.line{
+				background-color:#ddd;
+				border-bottom:1px solid #fff;
+				height:1px;
+				margin:0px 0px 15px 0px;
+			}
+            #content h1{
+                color:#0968A0;
+                font-weight:normal;
+                font-size:56px;
+                text-shadow:1px 1px 1px #fff;
+            }
+            .subline{
+                font-size:22px;
+                margin:20px 0px;
+                color:#999;
+				text-shadow:1px 1px 1px #fff;
+            }
+			.meta{
+				text-align:right;
+			}
+
+			.meta a:hover{
+				color:#aaa;
+				
+			}
+            .article p{
+                margin:20px 0px;
+                line-height:26px;
+                text-align:justify;
+				color:#666;
+				text-shadow:1px 1px 1px #fff;
+            }
+			.article a{
+				color:#aaa;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.article a:hover{
+				color:#0968A0;
+			}
+
+			.article p img.left{
+				float:left;
+				margin-right:20px;
+			}
+			.article p img.right{
+				float:right;
+				margin-left:20px;
+			}
+
+		</style>
+    </head>
+
+    <body>
+		<div id="content">
+            <span class="scroll"></span>
+        
+			<div class="line"></div>
+            <h1>张涛：<br />
+决战玉树之巅的平原康巴汉子</h1>
+           
+			<div class="line"></div>
+          
+          <div id="article" class="article">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;头戴“英雄结”，腰挎宝刀，平均身高在180厘米以上，古铜肤色；剽悍好斗又恩怨分明，一言不合立刻横刀立马，宝刀出鞘，刀不嗜血绝不回——— 这就是传说中的康巴汉子。<br />
+<img src="images/thumbs/1.jpg" alt="images/1.jpg" class="ih_image left"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;玉树的藏族汉子，就是传说中的康巴汉子。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在济南援建玉树指挥部、中建八局二公司，记者向数十名山东老乡询问过同一问题：你认识的康巴汉子是什么样？<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;得到的答案并不相同。区域经理张涛说，他们随身带刀，直率单纯，和他们相处不能玩心眼，否则刀子伺候；党支部书记郑恒柏说，康巴汉子是最容易成为生死朋友的，只要喝酒认你是兄弟，可以在最危险的时候为你挨刀、为你玩命，即使为你而死，闭眼前只需要你一句“兄弟”的称呼就行。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这究竟是怎样的汉子啊。走在玉树街头，记者在寻找。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在一座座大山脚下，在昔日赛马场里(因地震成为群众临时安置点)，在天黑后出入酒吧、饭馆的人群中，康巴汉子随时可见。他们梳一条粗粗的辫子，盘在头顶，辫间一丝红布直垂至肩膀——— 这就是“英雄结”，是勇敢不屈、刚烈勇武的象征。中午时分，他们长袍斜披，将一只肩膀裸露，原生态的野性和奔放坦荡无遗。因为语言不通，无法与他们交流。但同他们友善对视时，笑声会连同他们灼热的眼神将记者感染。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;据说，康巴汉子有世代相传的头饰，上有黄金、珊瑚、绿松石、玛瑙、珊瑚、象牙等。因世代相传时不断有珍宝增加，一个头饰的价值目前少说也有上百万元人民币。据说，康巴汉子是中国“吉普赛人”，生性喜欢浪迹天涯，虽没固定谋生手段，但“宝贝”无数——— 牦牛、羊群、藏獒、烈马以及马鞍袋里数不清的珠宝玉石。据说，康巴汉子是中国“以色列人”，天生会做生意……
+</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在玉树采访期间，记者翻越4600米的红土山桠口，沿唯一山路奔行130公里后来到安冲乡最偏远山村，在藏族同胞家里做客并午餐。他们，没有传说中的“英雄结”，没有传说中的宝刀……他们身穿皮夹克，喝雪花啤酒、红牛和杏仁露；忙时种青稞，闲时打麻将……如不是无意中偶尔露出腰间的刀把，你想不到这就是康巴汉子，而那是一把在济南也能买到的小刀。离开安冲乡时，康巴汉子龙仁站在村头对记者说，你们山东男人是平原的康巴汉子。记者随后问这名长年在高原与内地往来经商，去年开始为济南援建玉树指挥部、中建八局二公司志愿当翻译的他：“你觉得山东汉子和你们有很多相同地方吗？”龙仁说：“山东人实在，心眼好。好事做得多，说得少。我们是兄弟……”<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;行走在安冲乡的重重大山中，一座座山东人援建的藏式新居依山傍水，一名名陌生的康巴汉子站在路边玛尼石堆边向我们挥手示意。突然，记者想到———也许真正的男人，血管里应该充满青藏高原特有的、可穿透一切的阳光般力量；应该像青藏高原的大山，深沉安稳，胸怀宽厚；应该像青藏高原的江河，激情包容，无畏无私……
+
+				</p>
+			
+
+            </div>
+        </div>
+		<div id="ih_overlay" class="ih_overlay" style="display:none;"></div>
+
+
+       
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				
+				var highlight_timeout;
+
+				
+				$('img.ih_image').bind('mouseenter',function () {
+						var $thumb = $(this);
+						
+						var $clone = $('<div />',{
+							'id'		: 'ih_clone',
+							'className': 'ih_image_clone_wrap',
+							'html'     	: '<img src="'+$thumb.attr('src')+'" alt="'+$thumb.attr('alt')+'"/><span class="ih_zoom"></span>',
+							'style'		: 'top:'+$thumb.offset().top+'px;left:'+$thumb.offset().left+'px;'
+						});
+						
+						var highlight = function (){
+							$('#ih_overlay').show();
+							$('BODY').append($clone);
+						}
+						
+						highlight_timeout = setTimeout(highlight,700);
+
+						
+						$clone.find('.ih_zoom').bind('click',function(){
+							var $zoom = $(this);
+							$zoom.addClass('ih_loading').removeClass('ih_zoom');
+							var imgL_source = $thumb.attr('alt');
+							
+							$('<img class="ih_preview" style="display:none;"/>').load(function(){
+								var $imgL = $(this);
+								$zoom.hide();
+								var windowW = $(window).width();
+								var windowH = $(window).height();
+								var windowS = $(window).scrollTop();
+								
+								$clone.append($imgL).animate({
+									'top'			: windowH/2 + windowS + 'px',
+									'left'			: windowW/2  + 'px',
+									'margin-left'	: -$thumb.width()/2 + 'px',
+									'margin-top'	: -$thumb.height()/2 + 'px'
+								},400,function(){
+									var $clone = $(this);
+									var largeW = $imgL.width();
+									var largeH = $imgL.height();
+									$clone.animate({
+										'top'			: windowH/2 + windowS + 'px',
+										'left'			: windowW/2  + 'px',
+										'margin-left'	: -largeW/2 + 'px',
+										'margin-top'	: -largeH/2 + 'px',
+										'width'			: largeW + 'px',
+										'height'		: largeH + 'px'
+									},400).find('img:first').animate({
+										'width'			: largeW + 'px',
+										'height'		: largeH + 'px'
+									},400,function(){
+										var $thumb = $(this);
+										
+										$imgL.fadeIn(function(){
+											$zoom.addClass('ih_close').removeClass('ih_loading').fadeIn(function(){
+												$(this).bind('click',function(){
+													$clone.remove();
+													clearTimeout(highlight_timeout);
+													$('#ih_overlay').hide();
+												});
+											});
+											$thumb.remove();
+										});
+									});
+								});
+							}).error(function(){
+								
+								$zoom.fadeOut();
+							}).attr('src',imgL_source);
+						});		
+				}).bind('mouseleave',function(){
+					
+					if($('#ih_clone').length) return;
+					clearTimeout(highlight_timeout);
+				});
+				
+				
+				$('#ih_clone').live('mouseleave',function() {
+					var $clone = $('#ih_clone');
+					if(!$clone.find('.ih_preview').length){
+						$clone.remove();
+						clearTimeout(highlight_timeout);
+						$('#ih_overlay').hide();
+					}
+				});
+            });
+        </script>
+    </body>
+</html>

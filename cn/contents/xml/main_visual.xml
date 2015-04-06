@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<center>
+		<center  ImgName="images/visual01.png" 
+		url="#" 
+		Title="" />
+
+		<center  ImgName="images/visual05.png" 
+		url="#" 
+		Title="" />
+	
+		<center  ImgName="images/visual04.png" 
+		url="#" 
+		Title="" />
+		<center  ImgName="images/visual03.png" 
+		url="#" 
+		Title="" />
+	
+		<center  ImgName="images/visual02.png" 
+		url="#" 
+		Title="" />
+
+		<center  ImgName="images/visual05.png" 
+		url="#" 
+		Title="" />
+
+		
+	</center>
+
+<option>
+	<option    
+	    x_radiusX     =     "230"  
+	 	x_radiusY     =     "70"  	
+	 	x_centerX     =     "480"	
+		x_centerY     =     "170"
+		x_imgX         =     "-300"
+		x_imgY         =     "-230"
+		x_imgWidth    =     "610"
+		x_imgHeight   =     "310"
+		x_speed        =     "0.18"
+		x_Rspeed	      =     "3000"
+		x_isPlay         =     "right"
+		x_filepath        =     ""
+	/>
+</option>
+
+<!-- 
+
+x_radiusX x_radiusY 图片之间的距离参数
+x_centerX x_centerY 整个效果上下边距参数
+
+x_imgWidth x_imgHeight 图片宽度和高度参数
+x_Rspeed 滚动速度参数
+
+ -->

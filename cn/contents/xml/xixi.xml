@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <language linkBtnURL="images/gotoSite.png" />
+  <item fileType="IMAGE" duration="8000" URL="images/01.png" linkURL=" " target="_blank" gameid="UpClick" index="1">
+    <thumbnail URL="images/s1.png" type="001" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/02.jpg" linkURL=" " target="" gameid="SF" index="2">
+    <thumbnail URL="images/s2.png" type="002" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/03.jpg" linkURL=" " target="" gameid="Lunia" index="3">
+    <thumbnail URL="images/s3.jpg" type="003" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/04.jpg" linkURL=" " target="" gameid="ijji BI" index="4">
+    <thumbnail URL="images/s4.jpg" type="004" description1="感动常在" description2="感动常在" />
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/05.jpg" linkURL=" " target="" gameid="GUNZ" index="5">
+    <thumbnail URL="images/s5.jpg" type="005" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/06.jpg" linkURL=" " target="" gameid="ijji Reward Points" index="6">
+    <thumbnail URL="images/s6.jpg" type="006" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="10000" URL="images/07.jpg" linkURL=" " target="" gameid="Walgreens" index="7">
+    <thumbnail URL="images/s7.jpg" type="007" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="10000" URL="images/08.jpg" linkURL=" " target="" gameid="GoCash" index="8">
+    <thumbnail URL="images/s8.jpg" type="008" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="8000" URL="images/09.jpg" linkURL=" " target="" gameid="Atlantica" index="9">
+    <thumbnail URL="images/s9.jpg" type="009" description1="感动常在" description2="感动常在" />
+    <title><![CDATA[感动常在]]></title>
+    <description><![CDATA[感动常在]]></description>
+  </item>
+  <item fileType="IMAGE" duration="10000" URL="images/10.jpg" linkURL=" " target="" gameid="SocNet" index="10">
+    <thumbnail URL="images/s10.jpg" type="010" description1="感动常在" description2="感动常在" />
+  </item>
+</data>
+

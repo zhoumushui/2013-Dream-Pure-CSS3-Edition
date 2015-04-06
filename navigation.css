@@ -1,0 +1,65 @@
+﻿html
+{
+	width:100%;
+	height:100%;
+}
+body 
+{
+	background-color:#fff;
+	font-size:18px;
+	font-family:"Arial","Tahoma","微软雅黑","雅黑";
+	line-height:18px;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+}
+a
+{
+	display:block;
+	float:left;
+}
+del,div.clear
+{
+	height:0px;
+	font-size:0px;
+	line-height:0px;
+	padding:0px;
+	margin:0px;
+	display:block;
+	clear:both;
+	overflow:hidden;
+}
+div
+{
+	width:550px;
+	text-align:left;
+	margin:auto auto auto auto;
+}
+
+
+
+.menu8
+{
+	line-height:18px;
+	font-size:18px;
+	width:600px;
+	height:56px;
+	background:url("images/bg8_bg.jpg") no-repeat left top;
+	margin-bottom:30px;
+}
+.menu8 a:link,.menu8 a:visited
+{
+	height:46px;
+	width:114px;
+	color:#FFF;	
+	background:url("images/bg8_btn.jpg") no-repeat left top;
+	text-decoration:none;	
+	text-align:center;
+	margin-right:2px;
+	padding-top:10px;
+}
+.menu8 a:hover,.menu8 a:active
+{
+	background-position:left -56px;
+}
+

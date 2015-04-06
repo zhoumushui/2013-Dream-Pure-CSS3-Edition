@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Image Highlighting and Preview with jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+       
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            body{
+				width:960px;
+                font-family:Georgia,Times,serif;
+                background:#f0f0f0;
+            }
+            #content{
+	background-color: #f6f6f6;
+	width: 864px;
+	color: #fff;
+	border-left: 10px solid #0968A0;
+	border-right: 1px solid #444;
+	-moz-box-shadow: 0px 0px 10px #000;
+	-webkit-box-shadow: 0px 0px 10px #000;
+	box-shadow: 0px 0px 10px #000;
+	-moz-border-radius: 0px 0px 20px 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-left: auto;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 80px;
+	padding-left: 40px;
+            }
+            .head, .meta a{
+                font-family:Helvetica,Arial,Verdana;
+                text-transform:uppercase;
+                font-weight:bold;
+                font-size:12px;
+                letter-spacing:3px;
+                color:#ccc;
+                padding-bottom:10px;
+                margin-bottom:10px;
+				text-shadow:1px 1px 1px #fff;
+				text-decoration: none;
+            }
+			.line{
+				background-color:#ddd;
+				border-bottom:1px solid #fff;
+				height:1px;
+				margin:0px 0px 15px 0px;
+			}
+            #content h1{
+                color:#0968A0;
+                font-weight:normal;
+                font-size:56px;
+                text-shadow:1px 1px 1px #fff;
+            }
+            .subline{
+                font-size:22px;
+                margin:20px 0px;
+                color:#999;
+				text-shadow:1px 1px 1px #fff;
+            }
+			.meta{
+				text-align:right;
+			}
+
+			.meta a:hover{
+				color:#aaa;
+				
+			}
+            .article p{
+                margin:20px 0px;
+                line-height:26px;
+                text-align:justify;
+				color:#666;
+				text-shadow:1px 1px 1px #fff;
+            }
+			.article a{
+				color:#aaa;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.article a:hover{
+				color:#0968A0;
+			}
+
+			.article p img.left{
+				float:left;
+				margin-right:20px;
+			}
+			.article p img.right{
+				float:right;
+				margin-left:20px;
+			}
+
+		</style>
+    </head>
+
+    <body>
+		<div id="content">
+            <span class="scroll"></span>
+        
+			<div class="line"></div>
+            <h1>刘洋：<br />“太空玫瑰”的中国梦</h1>
+           
+		  <div class="line"></div>
+           
+            <div id="article" class="article">
+                <p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;高挑的身材，干练的短发，一身戎装，行如风，站如松，2月7日晚，央视2013年春晚最后一次彩排，李玉刚一曲婉转的《嫦娥》唱罢，神九航天员刘洋和景海鹏、刘旺等出现在舞台上，脸上绽放着如阳光般和煦灿烂的笑容。<br />
+<img src="images/thumbs/1.jpg" alt="images/1.jpg" class="ih_image left"/><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+“我不是嫦娥，但是我比嫦娥幸运，几代航天人把我们送上太空，在我们圆满完成任务后大家又用双手把我们接回了祖国，接回了家。”在全国观众面前，刘洋语气谦虚，又充满自豪。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2013年2月1日，中国青年网记者在“2012中华儿女年度人物”颁奖典礼上看到的刘洋，脸上笑容同样。2012年6月18日，当“神舟九号”成功实现与“天宫一号”的手动对接时，这个笑容就通过视频信号，绽放在全国乃至全世界人民的眼前。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“虽然是由我们来领取‘2012中华儿女年度人物’团体这个奖项，但这个荣誉不仅仅属于我们三个，它是属于我们全体航天人的，属于对我们国家航天事业支持和关注的大家。”1月29日，刘洋在接受中国青年网记者采访时，用平静而不失激情的声音，诉说着作为航天人的坚守担当和对未来的期盼，“在我们国家大发展的时代里，祝福青年朋友们能有更大的舞台，实现自己的‘中国梦’。”<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“横下一条心，拼搏干一场，一切为载人，再创新辉煌。”位于北京海淀区的北京航天城里，有这样一条横幅。四句话，20个字，中国航天人的忘我奉献已经淋漓尽致地展现在眼前。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;刘洋，作为许许多多为航天事业挥洒汗水的航天人之一，有些特别。她是我国第一位飞天女航天员，是名符其实的“太空玫瑰”。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　“我是1997年招飞入伍的，当时我们国家空军大发展，我赶上了我们国家招收新中国第七批女飞行员，幸运地一路过关斩将，当选了第七批女飞行员。2009年，又是因为国家的发展、时代的进步，我们国家开始选拔第一批女航天员，也就是国家的第二批航天员，我又幸运地一路过关斩将，成为新中国第一批女航天员。2012年，因为科技的进步，综合国力的增强，我们国家发射了神舟九号，我又再一次幸运地执行了这项任务。”在一次回答媒体提问时，刘洋连用了三个“幸运”。
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这朵“太空玫瑰”还不止一次说过这样一句话：“我们‘二批’是时代的幸运儿”。
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;是的，刘洋的确是时代的幸运儿，然而与这幸运相应的，是承担更多压力：“二批”航天员需要在两年完成“一批”航天员14年的课程，这其中包括体质训练、航天环境适应性训练、航天专业技术训练等八大类，每一类训练又由若干不同的训练项目和科目组成，至于训练的难度和强度，不会因为女性而降低标准。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“航天员跟之前想象的不是很一样。”2010年，正式开始接受航天员训练的刘洋，尽管已经有了11年的飞行经验，也还是需要经历从不适应到适应的过程。
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　“我们转椅有一个循序渐进的过程，5分钟好像是我的一个极限点，当他报4分钟过去之后，突然间浑身就开始冒汗，心里就像晕车那种说不出来的恶心感觉，但是你不能吐，如果第一次吐的话，第二次见了它就会条件反射，身体就会有了记忆，就很难克服，我就拼命转移自己的注意力，然后幻想自己在美丽的海边，幻想一切美好的东西，然后把自己的注意力转移出去。”回忆训练过程，刘洋依然是美丽的笑容，只是更多了一份坚定的表情。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　2012年6月18日，无垠宇宙，地球大气层外，天宫一号等待着。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;两天前的傍晚，也就是2012年6月16日18时37分，神舟九号飞船在酒泉卫星发射中心发射升空。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天宫一号等待的就是与神舟九号相会的这一刻。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;　而此时，刘洋正坐在“神九”的座舱中，她的视线，能够看见蔚蓝的地球。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天宫一号与神舟九号的手控交会对接，是“神九”航天员乘务组这次飞天的最重要任务，也是我国第一次进行手控交会对接试验。在执行手控交会对接时进行监视、支持，是刘洋的主要任务。手控交会对接因其需要航天员精准、细致的操作，被喻为“太空穿针”。目不转睛、聚精会神、纹丝不动……用再多的形容词来描述当时“神九”航天员乘务组的身心状态，都不为过。坐在“神九”操控员刘旺左手边的刘洋，正是如此。
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;与天宫一号的距离越来越近，画面中的十字交点小幅摇摆，对准、连接，严丝合缝！
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“手控交会对接正常完成！”这气壮山河的一句话经过无线电波传遍全国，传到太空的那一端，“太空玫瑰”也绽放出最灿烂的笑容。这笑容留在了宇宙，也成为定格在人们心中永远的画面。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回地球后，回想13天的太空工作、生活，回想完成任务时的心情，刘洋感慨道：“吃喝拉撒在太空上都是一项技术活儿，跟大家的想象完全不同。但是完成工作之后我非常激动，因为这是我国载人航空技术的一次突破，这使我国的航天事业又向前迈进了一大步。”<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“大家看到的我们执行任务的短短13天，只是我们事业生涯中太微不足道的几天，我们大部分的时间都在重复着同样枯燥严格的学习和训练。我是2010年5月加入的航天员大队，在两年多的时间里，我没有踏出航天城大门一步，不仅仅是我，我们的成员都是这样做的，完全牺牲了自己的个人时间。但是坚持一个梦想，为了祖国去执行任务，非常幸福，也非常值得。”在接受采访时，刘洋激动地说着。<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一代代航天人共同奋斗，构建中国飞天梦想的花园。在这万紫千红的花园中，刘洋是炫目的那朵太空玫瑰，在追寻梦想的路上，她绽放出最耀眼的美丽。 （文/李正穹）<br />
+</p>
+				
+			
+
+            </div>
+        </div>
+		<div id="ih_overlay" class="ih_overlay" style="display:none;"></div>
+
+
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function() {
+				
+				var highlight_timeout;
+
+				$('img.ih_image').bind('mouseenter',function () {
+						var $thumb = $(this);
+						
+						var $clone = $('<div />',{
+							'id'		: 'ih_clone',
+							'className': 'ih_image_clone_wrap',
+							'html'     	: '<img src="'+$thumb.attr('src')+'" alt="'+$thumb.attr('alt')+'"/><span class="ih_zoom"></span>',
+							'style'		: 'top:'+$thumb.offset().top+'px;left:'+$thumb.offset().left+'px;'
+						});
+						
+						var highlight = function (){
+							$('#ih_overlay').show();
+							$('BODY').append($clone);
+						}
+					
+						highlight_timeout = setTimeout(highlight,700);
+
+						
+						$clone.find('.ih_zoom').bind('click',function(){
+							var $zoom = $(this);
+							$zoom.addClass('ih_loading').removeClass('ih_zoom');
+							var imgL_source = $thumb.attr('alt');
+							
+							$('<img class="ih_preview" style="display:none;"/>').load(function(){
+								var $imgL = $(this);
+								$zoom.hide();
+								var windowW = $(window).width();
+								var windowH = $(window).height();
+								var windowS = $(window).scrollTop();
+								
+								$clone.append($imgL).animate({
+									'top'			: windowH/2 + windowS + 'px',
+									'left'			: windowW/2  + 'px',
+									'margin-left'	: -$thumb.width()/2 + 'px',
+									'margin-top'	: -$thumb.height()/2 + 'px'
+								},400,function(){
+									var $clone = $(this);
+									var largeW = $imgL.width();
+									var largeH = $imgL.height();
+									$clone.animate({
+										'top'			: windowH/2 + windowS + 'px',
+										'left'			: windowW/2  + 'px',
+										'margin-left'	: -largeW/2 + 'px',
+										'margin-top'	: -largeH/2 + 'px',
+										'width'			: largeW + 'px',
+										'height'		: largeH + 'px'
+									},400).find('img:first').animate({
+										'width'			: largeW + 'px',
+										'height'		: largeH + 'px'
+									},400,function(){
+										var $thumb = $(this);
+										
+										$imgL.fadeIn(function(){
+											$zoom.addClass('ih_close').removeClass('ih_loading').fadeIn(function(){
+												$(this).bind('click',function(){
+													$clone.remove();
+													clearTimeout(highlight_timeout);
+													$('#ih_overlay').hide();
+												});
+											});
+											$thumb.remove();
+										});
+									});
+								});
+							}).error(function(){
+								
+								$zoom.fadeOut();
+							}).attr('src',imgL_source);
+						});		
+				}).bind('mouseleave',function(){
+					
+					if($('#ih_clone').length) return;
+					clearTimeout(highlight_timeout);
+				});
+				
+				
+				$('#ih_clone').live('mouseleave',function() {
+					var $clone = $('#ih_clone');
+					if(!$clone.find('.ih_preview').length){
+						$clone.remove();
+						clearTimeout(highlight_timeout);
+						$('#ih_overlay').hide();
+					}
+				});
+            });
+        </script>
+    </body>
+</html>
